@@ -1,6 +1,6 @@
 import express from "express";
 
-import { getOpportunities } from "../controllers/opportunities.js";
+import { getOpportunities , createOpp } from "../controllers/opportunities.js";
 
 const router = express.Router();
 
@@ -10,5 +10,6 @@ const router = express.Router();
 // });
 
 router.get("/", getOpportunities);
+router.post("/", createOpp);
 
 export default router;

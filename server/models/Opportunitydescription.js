@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const opportunitySchema = mongoose.opportunitySchema({
+const opportunitySchema = mongoose.Schema({
   title: String,
   description: String,
   tags: [String],
@@ -17,7 +17,7 @@ const opportunitySchema = mongoose.opportunitySchema({
 });
 
 const Opportunitydescription = mongoose.model(
-  "Opportunitiesdescription",
+  "Opportunitydescription",
   opportunitySchema
 );
 
