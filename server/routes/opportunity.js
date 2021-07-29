@@ -1,6 +1,6 @@
 import express from "express";
 
-import { getOpportunities , createOpp } from "../controllers/opportunities.js";
+import { getOpportunities, createOpp } from "../controllers/opportunities.js";
 
 const router = express.Router();
 
