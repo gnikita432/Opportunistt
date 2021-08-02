@@ -1,14 +1,17 @@
 import React from "react";
 import { Container, AppBar, Typography, Grow, Grid } from "@material-ui/core";
 
-import Opportunities  from "./components/Opportunities/Opportunities";
+import Opportunities from "./components/Opportunities/Opportunities";
 import Form from "./components/Form/Form";
+import useStyles from "./styles";
 
 function App() {
+  const classes = useStyles();
+
   return (
     <Container maxWidth="lg">
-      <AppBar position="static" color="inherit">
-        <Typography varaint="h2" align="center">
+      <AppBar className={classes.appBar} position="static" color="inherit">
+        <Typography className={classes.heading} varaint="h2" align="center">
           Opportunities
         </Typography>
       </AppBar>
