@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
-const opportunitySchema = mongoose.Schema({
+const PostSchema = mongoose.Schema({
   title: String,
-  description: String,
+  message: String,
   tags: [String],
   creator: String,
   selectedFile: String,
@@ -16,9 +16,6 @@ const opportunitySchema = mongoose.Schema({
   },
 });
 
-const Opportunitydescription = mongoose.model(
-  "Opportunitydescription",
-  opportunitySchema
-);
+const PostMessage = mongoose.model("PostMessage", PostSchema);
 
-export default Opportunitydescription;
+export default PostMessage;

@@ -5,11 +5,11 @@ import cors from "cors";
 
 // this 👆 instead of const express=require('express'); for importing (mordern nd easier to use) you can enable it by going to package.json and one line bellow main that is type:module.
 
-import opportunityRoutes from "./routes/opportunity.js";
+import postRoutes from "./routes/posts.js";
 
 const app = express();
 
-app.use("/opportunity", opportunityRoutes);
+app.use("/posts", postRoutes);
 
 app.use(express.json({ limit: "25mb", extended: true }));
 app.use(express.urlencoded({ limit: "25mb", extended: true }));

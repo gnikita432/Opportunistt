@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 
-import opportunities from "./opportunities";
+import Posts from "./Posts";
 
 export default combineReducers({
-  opportunities,
+  Posts,
 });

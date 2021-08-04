@@ -1,5 +1,5 @@
 import axios from "axios";
 
-const url = "http://localhost:5000/opportunity";
+const url = "http://localhost:5000/posts";
 
-export const fetchOpp = () => axios.get(utl);
+export const fetchOpp = () => axios.get(url);
