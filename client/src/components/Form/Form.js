@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { TextField, Button, Typography, Paper } from "@material-ui/core";
 
+import useStyles from "./styles";
+
 const Form = () => {
+  const classes = useStyles();
+
   const [postData, setPostData] = useState({
     creator: "",
     title: "",
@@ -15,8 +19,13 @@ const Form = () => {
   const clear = () => {};
 
   return (
-    <Paper>
-      <form autoComplete="off" noValidate onSubmit={handleSubmit}>
+    <Paper className={classes.paper}>
+      <form
+        autoComplete="off"
+        noValidate
+        className={`${classes.root} ${classes.form}`}
+        onSubmit={handleSubmit}
+      >
         <Typography variant="h5">Post an Opportunity</Typography>
         <TextField
           name="creator"
@@ -58,6 +67,10 @@ const Form = () => {
           name="applyby"
           variant="outlined"
           label="Apply By"
+          type="date"
+          InputLabelProps={{
+            shrink: true,
+          }}
           fullWidth
           value={postData.applyby}
           onChange={(e) =>
@@ -73,6 +86,7 @@ const Form = () => {
           onChange={(e) => setPostData({ ...postData, tags: e.target.value })}
         />
         <Button
+          className={classes.buttonSubmit}
           variant="contained"
           color="primary"
           size="large"
