@@ -6,7 +6,7 @@ const PostSchema = mongoose.Schema({
   tags: [String],
   creator: String,
   link: String,
-  applyby: [Date],
+  applyby: String,
   likeCount: {
     type: Number,
     default: 0,
