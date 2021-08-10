@@ -6,17 +6,22 @@ import {
   CardMedia,
   Button,
   Typography,
+  Link,
 } from "@material-ui/core/";
 import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
 import DeleteIcon from "@material-ui/icons/Delete";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import moment from "moment";
 
+import useStyles from "./styles";
+
 const Post = ({ post }) => {
+  const classes = useStyles();
+
   return (
-    <Card>
+    <Card className={classes.card}>
       <CardMedia title={post.title} />
-      <div>
+      <div className={classes.grid1}>
         <Typography variant="body2" color="textSecondary" component="h2">
           {post.tags.map((tag) => `#${tag} `)}
         </Typography>
@@ -28,25 +33,28 @@ const Post = ({ post }) => {
         </div>
       </div>
 
-      <div>
-        <Typography variant="h5" component="h2">
+      <div className={classes.grid2}>
+        <Typography className={classes.title} variant="h5" component="h2">
           {post.title}
         </Typography>
-
-        <Typography variant="h6">{post.applyby}</Typography>
+        <Typography variant="subtitle1">{`Apply By: ${post.applyby}`}</Typography>
       </div>
 
-      <div>
+      <div style={{ marginBottom: "10px" }}>
         <Typography variant="body2" color="textSecondary" component="p">
           {post.message}
         </Typography>
-
-        <Typography variant="body2" color="textSecondary" component="p">
-          {post.link}
-        </Typography>
       </div>
-
-      <CardActions>
+      <Button
+        style={{ width: "20%" }}
+        variant="outlined"
+        type="submit"
+        color="primary"
+        href=""
+      >
+        Apply
+      </Button>
+      <CardActions className={classes.cardActions}>
         <Button size="small" color="primary" onClick={() => {}}>
           <ThumbUpAltIcon fontSize="small" /> Like {post.likeCount}{" "}
         </Button>
