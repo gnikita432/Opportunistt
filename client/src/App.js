@@ -19,7 +19,7 @@ function App() {
     <Container maxWidth="lg">
       <AppBar className={classes.appBar} position="static" color="inherit">
         <Typography className={classes.heading} varaint="h2" align="center">
-          Posts
+          Opportunities
         </Typography>
       </AppBar>
       <Grow in>
