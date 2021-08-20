@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { CircularProgress, Grid } from "@material-ui/core";
 import Post from "./Post/Post";
 
-const Posts = () => {
+const Posts = ({ setCurrentId }) => {
   const style = {
     display: "flex",
     flexDirection: "column-reverse",
@@ -19,7 +19,7 @@ const Posts = () => {
     <Grid style={style} container alignItems="strech" spacing="3">
       {posts.map((post) => (
         <Grid key={post._id} item xs={12}>
-          <Post post={post} />
+          <Post post={post} setCurrentId={setCurrentId} />
         </Grid>
       ))}
     </Grid>

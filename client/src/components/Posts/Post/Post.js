@@ -15,7 +15,7 @@ import moment from "moment";
 
 import useStyles from "./styles";
 
-const Post = ({ post }) => {
+const Post = ({ post, setCurrentId }) => {
   const classes = useStyles();
 
   return (
@@ -27,7 +27,7 @@ const Post = ({ post }) => {
         </Typography>
 
         <div>
-          <Button size="small" onClick={() => {}}>
+          <Button size="small" onClick={() => setCurrentId(post._id)}>
             <MoreHorizIcon fontSize="default" />
           </Button>
         </div>
