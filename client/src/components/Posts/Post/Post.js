@@ -50,7 +50,7 @@ const Post = ({ post, setCurrentId }) => {
         variant="outlined"
         type="submit"
         color="primary"
-        href=""
+        href={post.link}
       >
         Apply
       </Button>

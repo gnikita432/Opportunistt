@@ -34,9 +34,20 @@ const Form = ({ currentId, setCurrentId }) => {
     } else {
       dispatch(createPost(postData));
     }
+    clear();
   };
 
-  const clear = () => {};
+  const clear = () => {
+    setCurrentId(null);
+    setPostData({
+      creator: "",
+      title: "",
+      message: "",
+      link: "",
+      applyby: "",
+      tags: "",
+    });
+  };
 
   return (
     <Paper className={classes.paper}>
@@ -46,7 +57,9 @@ const Form = ({ currentId, setCurrentId }) => {
         className={`${classes.root} ${classes.form}`}
         onSubmit={handleSubmit}
       >
-        <Typography variant="h5">Post an Opportunity</Typography>
+        <Typography variant="h5">
+          {currentId ? "Edit the" : "Post an"} Opportunity
+        </Typography>
         <TextField
           name="creator"
           variant="outlined"
