@@ -1,6 +1,12 @@
 # Opportunist
 
-# Features
+## Purpose of Opportunistt 💡
+Opportunist is a platform where users can post different opportunities updates like Full-time Jobs, internships, scholarships, etc. and Opportunity Seekes can Search for Opportunities and can Apply for the same. Users can also Edit, Delete and Like the Posts.
+<!-- Tired of switching apps and end up wasting time? here's Opportunistt all kind of Jobs at one place. Here you can Post Job Updates and also can Find Job updates and Apply.
+The main motto of this app is to
+Many of the times we have to keep watch on different sites like linkden, Discord, Telegram, some Youtube Channels for any kind of job updates and we also share them on other social media platforms. But Opportunistt is the one place where anyone can post a job, scholarship, internship, etc updates and anyone can find relevent jobs for them and Apply for the same. Work for the comunity here by posting job openings and help each other to grow. -->
+
+## Features 📖
 
 - Create the Post
 - Edit the Post
@@ -9,8 +15,7 @@
 
 ## Frameworks & Tools 🧰
 
-<img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>  <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/> <img src ="https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=for-the-badge&logo=mongodb&logoColor=white"/>  <img src="https://img.shields.io/badge/%20React-blue?style=for-the-badge&logo=React" > <img src="https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge"/> 
-<img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/> 
+<img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>  <img src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white"/>  <img src ="https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=for-the-badge&logo=mongodb&logoColor=white"/>  <img src="https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge"/>  <img src="https://img.shields.io/badge/%20React-blue?style=for-the-badge&logo=React" >  <img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/>  <img src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/> 
 
 - **Frontend**: HTML5, MaterialUI, React, Redux
 - **Backend**: Node.js, Express.js
@@ -19,6 +24,16 @@
 - **Database**: MongoDb
 - **Hosting**: Heroku, Netlify
 
+## Deployed here 🌐
+Click Here to view the deployment!
+
+https://opportunistt.netlify.app/
+
+## Future Enhancements🔈
+- Authentication
+- Sin In/Sign Up Page
+- User Profile
+- Seprate opportunities by their tags (Scholarships, internships, full-time, etc)
 
 ## Local Setup Instructions 💻
 
