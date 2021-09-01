@@ -2,13 +2,10 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { CircularProgress, Grid } from "@material-ui/core";
 import Post from "./Post/Post";
+import useStyles from "./styles";
 
 const Posts = ({ setCurrentId }) => {
-  const style = {
-    display: "flex",
-    flexDirection: "column-reverse",
-  };
-
+  const classes = useStyles();
   const posts = useSelector((state) => state.posts);
 
   console.log(posts);
@@ -16,7 +13,7 @@ const Posts = ({ setCurrentId }) => {
   return !posts.length ? (
     <CircularProgress />
   ) : (
-    <Grid style={style} container alignItems="strech" spacing="3">
+    <Grid className={classes.display} container alignItems="strech" spacing="3">
       {posts.map((post) => (
         <Grid key={post._id} item xs={12}>
           <Post post={post} setCurrentId={setCurrentId} />
