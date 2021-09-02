@@ -1,17 +1,10 @@
-# Opportunist
+# Opportunistt
 
 ## Purpose of Opportunistt 💡
-Opportunist is a platform where users can post different opportunities updates like Full-time Jobs, internships, scholarships, etc. and Opportunity Seekes can Search for Opportunities and can Apply for the same. Users can also Edit, Delete and Like the Posts.
+Opportunistt is a platform where users can post different opportunities updates like Full-time Jobs, internships, scholarships, etc. and Opportunity Seekers can Search for Opportunities and can Apply for the same. Users can also Edit, Delete and Like the Posts.
 <!-- Tired of switching apps and end up wasting time? here's Opportunistt all kind of Jobs at one place. Here you can Post Job Updates and also can Find Job updates and Apply.
 The main motto of this app is to
 Many of the times we have to keep watch on different sites like linkden, Discord, Telegram, some Youtube Channels for any kind of job updates and we also share them on other social media platforms. But Opportunistt is the one place where anyone can post a job, scholarship, internship, etc updates and anyone can find relevent jobs for them and Apply for the same. Work for the comunity here by posting job openings and help each other to grow. -->
-
-## Features 📖
-
-- Create the Post
-- Edit the Post
-- Like the Post
-- Delete the Post
 
 ## Frameworks & Tools 🧰
 
@@ -24,6 +17,13 @@ Many of the times we have to keep watch on different sites like linkden, Discord
 - **Database**: MongoDb
 - **Hosting**: Heroku, Netlify
 
+## Features 📖
+
+- Create the Post
+- Edit the Post
+- Like the Post
+- Delete the Post
+
 ## Deployed here 🌐
 Click Here to view the deployment!
 
@@ -31,9 +31,10 @@ https://opportunistt.netlify.app/
 
 ## Future Enhancements🔈
 - Authentication
-- Sin In/Sign Up Page
+- Sign In/Sign Up Page
 - User Profile
 - Seprate opportunities by their tags (Scholarships, internships, full-time, etc)
+- Post gets deleted automatically after a span of 2-3 months
 
 ## Local Setup Instructions 💻
 
@@ -72,7 +73,7 @@ https://opportunistt.netlify.app/
         npm install
         ```
 2. **Run the project:** 
-    - Now run the Project locally by
+    - Now run the Project locally on both server and client terminal
         ```bash
         npm start
         ```
@@ -87,3 +88,7 @@ https://opportunistt.netlify.app/
      ```text
     http://localhost:5000/
     ```
+    
+    
+    ### Made with ♥ by [Nikita](https://gnikita432.github.io/portfolio-website/)
+    
