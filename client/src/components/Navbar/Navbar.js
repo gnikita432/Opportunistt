@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { AppBar, Button, Toolbar, Typography, Avatar } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useDispatch } from 'react-redux';
 import useStyles from "./styles";
 
 const Navbar = () => {
   const classes = useStyles();
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("profile")));
   console.log(user);
@@ -13,7 +17,15 @@ const Navbar = () => {
     const token = user?.token;
 
     setUser(JSON.parse(localStorage.getItem("profile")));
-  }, []);
+  }, [location]); // we will call this useffect as soon as the url change to homepage
+
+  const logout = () => {
+    dispatch({ type: "LOGOUT" });
+
+    navigate('/');
+
+    setUser(null);
+  };
 
   return (
     <AppBar className={classes.appBar} position="static" color="inherit">
@@ -41,13 +53,7 @@ const Navbar = () => {
             <Typography className={classes.userName} variant="h6">
               {user.result.name}
             </Typography>
-            <Button
-              variant="contained"
-              className={classes.logout}
-              color="secondary"
-            >
-              Logout
-            </Button>
+            <Button variant="contained" className={classes.logout} color="secondary" onClick={logout}>Logout</Button>
           </div>
         ) : (
           <Button
