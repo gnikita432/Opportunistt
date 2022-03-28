@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { GoogleLogin } from "react-google-login";
 import { useDispatch } from "react-redux";
+import { useNavigate } from 'react-router-dom';
 
 import {
   Avatar,
@@ -24,6 +25,7 @@ const Auth = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [isSignup, setIsSignup] = useState(false);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const handleShowPassword = () =>
     setShowPassword((prevShowPassoword) => !prevShowPassoword);
@@ -42,7 +44,7 @@ const Auth = () => {
     try {
       dispatch({ type: 'AUTH', data: { result, token } });
 
-      // history.push("/");
+      navigate.push("/");
     } catch (error) {
       console.log(error);
     }
