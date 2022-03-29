@@ -16,14 +16,12 @@ export const getPosts = async (req, res) => {
 };
 
 export const createPost = async (req, res) => {
-  const { title, message, link, creator, tags } = req.body;
+  const post = req.body;
 
   const newPostMessage = new PostMessage({
-    title,
-    message,
-    link,
-    creator,
-    tags,
+    ...post,
+    creator: req.userId,
+    createdAt: new Date().toISOString(),
   });
 
   try {
@@ -82,11 +80,9 @@ export const likePost = async (req, res) => {
     post.likes = post.likes.filter((id) => id !== String(req.userId));
   }
 
-  const updatedPost = await PostMessage.findByIdAndUpdate(
-    id,
-    post,
-    { new: true }
-  );
+  const updatedPost = await PostMessage.findByIdAndUpdate(id, post, {
+    new: true,
+  });
 
   res.json(updatedPost);
 };

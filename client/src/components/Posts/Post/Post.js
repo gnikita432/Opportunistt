@@ -75,7 +75,7 @@ const Post = ({ post, setCurrentId }) => {
         <Typography
           variant="body2"
           component="p"
-        >{`Posted by: ${post.creator}`}</Typography>
+        >{`Posted by: ${post.name}`}</Typography>
 
         <Typography variant="body2" color="textSecondary">
           {moment(post.createdAt).fromNow()}
