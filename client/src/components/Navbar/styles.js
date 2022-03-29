@@ -16,7 +16,12 @@ export default makeStyles(() => ({
     fontSize: "1.7rem",
   },
   brandContainer: {
-    display: 'flex',
-    alignItems: 'center',
-  }
+    display: "flex",
+    alignItems: "center",
+  },
+  profile: {
+    display: "flex",
+    justifyContent: "space-between",
+    width: "280px",
+  },
 }));
