@@ -6,6 +6,7 @@ import dotenv from "dotenv";
 // this 👆 instead of const express=require('express'); for importing (mordern nd easier to use) you can enable it by going to package.json and one line bellow main that is type:module.
 
 import postRoutes from "./routes/posts.js";
+import userRoutes from "./routes/users.js";
 
 const app = express();
 dotenv.config();
@@ -16,6 +17,7 @@ app.use(express.urlencoded({ limit: "25mb", extended: true }));
 app.use(cors());
 
 app.use("/posts", postRoutes);
+app.use("/user", userRoutes);
 
 const PORT = process.env.PORT || 5000;
 
