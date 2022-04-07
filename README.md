@@ -29,7 +29,7 @@ Many of the times we have to keep watch on different sites like linkden, Discord
 ## Deployed here 🌐
 Click Here to view the deployment!
 
-https://opportunistt.netlify.app/
+https://oopportunist.netlify.app/
 
 ## Future Enhancements🔈
 - User Profile
