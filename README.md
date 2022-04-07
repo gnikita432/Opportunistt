@@ -23,6 +23,8 @@ Many of the times we have to keep watch on different sites like linkden, Discord
 - Edit the Post
 - Like the Post
 - Delete the Post
+- Implemented Authemtication
+- Sign In/ Sign Up Page
 
 ## Deployed here 🌐
 Click Here to view the deployment!
@@ -30,11 +32,11 @@ Click Here to view the deployment!
 https://opportunistt.netlify.app/
 
 ## Future Enhancements🔈
-- Authentication
-- Sign In/Sign Up Page
 - User Profile
 - Seprate opportunities by their tags (Scholarships, internships, full-time, etc)
 - Post gets deleted automatically after a span of 2-3 months
+- Comments
+- Chat Feature
 
 ## Local Setup Instructions 💻
 
