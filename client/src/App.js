@@ -13,10 +13,10 @@ function App() {
       <Container maxWidth="lg">
         <Navbar />
         <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/posts" exact component={Home} />
-          <Route path="/posts/search" exact component={Home} />
-          <Route path="/auth" exact element={<Auth />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/posts" element={<Home />} />
+          <Route path="/posts/search" element={<Home />} />
+          <Route path="/auth" element={<Auth />} />
         </Routes>
       </Container>
     </BrowserRouter>
